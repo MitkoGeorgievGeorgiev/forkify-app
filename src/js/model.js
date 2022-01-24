@@ -75,7 +75,8 @@ export const getPageResults = function (page = state.search.page) {
     const start = (page - 1) * state.search.resultsPerPage
     const end = page * state.search.resultsPerPage
 
-    return result = state.search.results.slice(start, end)
+    const result = state.search.results.slice(start, end)
+    return result
 }
 
 export const updateServings = function (newServings) {
